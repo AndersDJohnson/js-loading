@@ -1,0 +1,28 @@
+/*! MIT licensed by https://github.com/AndersDJohnson/js-loading */
+/**
+ * Prevents [FOUC][fouc] (flash of unstyled content) until JavaScript loads and executes,
+ *   by providing classes to hide specified elements.
+ *
+ * @param [js-selector] An optional selector that indicates JavaScript support.
+ * @param [prefix] An optional prefix for the loading classes.
+ */
+.js-loading-mixin(@js-selector: '.js', @prefix: 'js') {
+
+  @js-selector-interpolated: ~'@{js-selector}';
+  @prefix-interpolated: ~'@{prefix}';
+
+  /**
+   * Adds FOUC styles applied immediately,
+   *   effective until '.js-loading' class is removed.
+   */
+  @{js-selector-interpolated}.@{prefix-interpolated}-loading,
+  @{js-selector-interpolated} .@{prefix-interpolated}-loading {
+    .@{prefix-interpolated}-loading-invisible {
+      visibility: hidden;
+    }
+    .@{prefix-interpolated}-loading-hidden {
+      display: none;
+    }
+  }
+
+}
