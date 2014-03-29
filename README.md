@@ -15,6 +15,10 @@ bower install --save js-loading
 
 ## Usage
 
+1. Add both CSS and JS to your page.
+2. Add a `js-loading` class to your container element
+  (<html> element is preferred). If overriding prefix, use `${prefix}-loading` instead.
+
 Example:
 
 ```html
@@ -42,6 +46,10 @@ Example:
 ```
 
 Credit to Paul Irish for the [`.no-js` to `.js` trick](http://www.paulirish.com/2009/avoiding-the-fouc-v3/).
+
+## JS API
+
+See `src/js-loading.js` and the JS doc comments there.
 
 ## LESS API
 
