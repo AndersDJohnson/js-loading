@@ -24,6 +24,18 @@
     $container: null
   };
 
+  /**
+   * Call this function when your JavaScript has finished executing.
+   * 
+   * @param options Options
+   * @param [options.prefix] Optional prefix for loading classes. Defaults to 'js'.
+   * @param [options.$container] Optional jQuery object representing container element.
+   *   Defaults to null, then `container` is checked.
+   * @param [options.container] Optional DOM element as container element.
+   *   Defaults to null, then `containerSelector` is checked.
+   * @param [options.containerSelector] Optional jQuery selector representing container.
+   *   Defaults to 'html, body'.
+   */
   jsLoading.loaded = function (options) {
     options = $.extend({}, jsLoading.defaults, options);
     $(function () {
