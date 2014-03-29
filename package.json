@@ -1,6 +1,6 @@
 {
   "name": "js-loading",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Prevents FOUC until JS loads.",
   "main": "dist/js-loading.js",
   "dependencies": {},

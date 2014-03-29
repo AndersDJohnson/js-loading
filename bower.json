@@ -1,7 +1,7 @@
 {
   "name": "js-loading",
   "description": "Prevents FOUC until JS loads.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/AndersDJohnson/js-loading",
   "license": "MIT",
   "ignore": [
