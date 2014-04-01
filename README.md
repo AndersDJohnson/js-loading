@@ -17,9 +17,9 @@ bower install --save js-loading
 
 1. Add both CSS and JS to your page. The JS supports AMD and browser global `jsLoading`.
 2. Add a `js-loading` class to your container element
-  (<html> element is preferred). If overriding prefix, use `${prefix}-loading` instead.
+  (&lt;html&gt; element is preferred). If overriding prefix, use `${prefix}-loading` instead.
 3. Add call to `jsLoading.loaded()` when your JS has loaded and executed.
-  Pass options to container, e.g. `{prefix: 'my-js'}` if overriding prefix.
+  Pass options if desired, e.g. `{containerSelector: 'body'}` for container selector, or `{prefix: 'my-js'}` if overriding prefix.
   Refer to JS API below for complete option list.
 
 Example:
